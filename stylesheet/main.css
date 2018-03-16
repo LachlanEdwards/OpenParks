@@ -1,0 +1,603 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #2C363F;
+}
+
+.width {
+    margin: 0 !important;
+    width: auto !important;
+}
+
+.javascript {
+    width: 100%;
+    position: static;
+    top: 0;
+    background: linear-gradient(to right, #ff4b1f, #ff9068);
+    height: 50px;
+}
+
+.javascript p {
+    color: white;
+    width: inherit;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    margin: 0 auto;
+    width: 1024px;
+}
+
+.spin {
+    animation-name: spin;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+a {
+    color: #2C363F;
+    text-decoration: none;
+}
+
+a:hover {
+    transition: color, .5s;
+    color: #106DB4;
+}
+
+.active {
+    color: #106DB4 !important;
+}
+
+input {
+    display: flex;
+    border-color: #C0C0C0;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1em 3em 1em 1em;
+}
+
+input:invalid {
+    display: flex;
+    border-color: #ED6A5A;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1em 3em 1em 1em;
+}
+
+input:focus {
+    border-color: #106DB4;
+    border-style: solid;
+    border-width: 1px;
+    outline: none;
+    transition: border-color, 1s;
+}
+
+.none-list-style {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    justify-content: center;
+    align-content: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.right-text {
+    text-align: right;
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+
+header {
+    height: 108px;
+    display: block;
+    padding: 1em 0;
+    box-shadow: 0px 1px 0px 0px #106DB4;
+}
+
+.navigation .left {
+    height: inherit;
+}
+
+.navigation .logo img {
+    width: 108px;
+    height: 108px;
+}
+
+.navigation .logo .brand-name {
+    color: #106DB4;
+    font-family: Avenir, sans-serif;
+    font-weight: 700;
+    padding: 0 0 0 1em;
+}
+
+.navigation .right {
+    height: inherit;
+}
+
+.navigation .search {
+    height: 67px;
+}
+
+.small-search,
+.sm-search {
+    height: inherit;
+}
+
+.small-search form,
+.sm-search form {
+    height: inherit;
+}
+
+.small-search .option,
+.sm-search .option {
+    margin: 0 0 .5em 0;
+    padding: 0;
+}
+
+.large-search form .icon {
+    position: relative;
+    top: -34px;
+    right: 17px;
+    color: #C0C0C0;
+    font-size: inherit;
+    float: right;
+    margin-bottom: -34px;
+    cursor: pointer;
+}
+
+.small-search form .icon,
+.sm-search form .icon {
+    position: relative;
+    top: -28px;
+    right: 12px;
+    color: #C0C0C0;
+    font-size: inherit;
+    float: right;
+    cursor: pointer;
+}
+
+.small-search .option .option-item,
+.large-search .option .option-item,
+.sm-search .option .option-item {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #C0C0C0;
+    padding: 0 1em 0 0;
+    cursor: pointer;
+}
+
+.small-search .option .option-item:active,
+.small-search .option .option-item:hover,
+.large-search .option .option-item:active,
+.large-search .option .option-item:hover,
+.sm-search .option .option-item:hover {
+    transition: color, .5s;
+    color: #106DB4;
+}
+
+.small-search .small-input-wrapper input,
+.sm-search .small-input-wrapper input {
+    height: inherit;
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 12px;
+    width: 100%;
+}
+
+.navul {
+    height: 41px;
+}
+
+.navul .nav {
+    list-style-type: none;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.navul .nav .nav-item {
+    height: inherit;
+    line-height: 41px;
+    font-weight: 700;
+    padding: 0 0.5em;
+    margin: 0 0 0 1em;
+}
+
+.middle {
+    min-height: calc(100vh - 216px - 4em);
+}
+
+.large-search .option {
+    margin: 0 0 1em 0;
+    padding: 0;
+}
+
+.large-search .large-input-wrapper .large-search-input {
+    width: 100%;
+    font-family: 'Avenir Next', sans-serif;
+}
+
+.middle .accessible {
+    width: 100%;
+}
+
+.info {
+    color: #C0C0C0;
+    padding: 0;
+    margin: 1em 0 0 0;
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.error {
+    color: #ED6A5A;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+footer {
+    min-height: 108px;
+    box-shadow: 0px -1px 0px 0px #106DB4;
+    overflow: hidden;
+}
+
+footer .left,
+footer .right {
+    width: 50%;
+    font-size: 11px;
+}
+
+footer .map,
+footer .legal {
+    margin: 0;
+    padding: 0;
+}
+
+footer .map .map-item {
+    font-weight: 700;
+    padding-top: 1em;
+}
+
+footer .legal .legal-item {
+    text-align: right;
+    padding-top: 1em;
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+    margin: 0 0 1em 0;
+}
+
+.signup,
+.logon {
+    width: 100%;
+}
+
+.signup .left,
+.logon .left {
+    width: 50%;
+    margin: 2em 0;
+}
+
+.signup form .field,
+.logon form .field {
+    margin: 0 0 2em 0;
+}
+
+.signup form .description,
+.logon form .description {
+    font-weight: 700;
+    font-size: 11px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #C0C0C0;
+}
+
+.signup form input,
+.logon form input,
+.reviews form input {
+    width: 100%;
+    font-family: 'Avenir Next', sans-serif;
+    margin: 1em 0 0 0;
+    box-sizing: border-box;
+}
+
+.signup .button-parent,
+.logon .button-parent,
+.reviews .button-parent {
+    width: 100%;
+}
+
+.signup .button,
+.logon .button,
+.reviews .button {
+    border: 0;
+    background-color: transparent;
+    color: #2C363F;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.signup .right,
+.logon .right {
+    width: 50%;
+    margin: 2em 0;
+}
+
+.result .user {
+    margin: 36px 0;
+}
+
+.result .user .title {
+    margin: 0;
+    padding: 0;
+}
+
+.result .user .info {
+    margin-top: 1em;
+}
+
+.return .left,
+.return .right {
+    width: 50%;
+}
+
+.return .left.exclusive {
+    margin: 0 .5em 0 0;
+}
+
+.return .right.exclusive {
+    margin: 0 0 0 .5em;
+}
+
+.result .return {
+    margin: 0 0 1em 0;
+}
+
+.result .item {
+    height: 108px;
+    width: 100%;
+    margin: 1em 0;
+    color: white;
+}
+
+.result .item:first-child {
+    margin: 0 0 1em 0;
+}
+
+.image-wrapper {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    width: inherit;
+    height: inherit;
+}
+
+.gradient {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.55) 100%);
+}
+
+.gradient:hover {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.65) 100%);
+}
+
+.result {
+    width: 100%;
+}
+
+.result .item .margin {
+    padding: 1em;
+}
+
+.result .item .title {
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0;
+}
+
+.result .item .street {
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 2em;
+}
+
+.result .item .rating .material-icons {
+    font-size: 14px;
+}
+
+.result .item .park-code {
+    font-size: 12px;
+}
+
+.item-document .title {
+    margin: 1em 0;
+}
+
+.item-document .info {
+    margin: 0 0 .5em 0;
+}
+
+.item-document table.item-info {
+    width: 100%;
+}
+
+.item-document .left,
+.item-document .right {
+    width: 50%;
+}
+
+.item-document .left {
+    margin: 0 1em 0 0;
+}
+
+.item-document .right {
+    margin: 0 0 0 1em;
+}
+
+.item-document table.item-info,
+.item-document table.item-info tr,
+.item-document table.item-info td {
+    border-collapse: collapse;
+    border: 1px solid #C0C0C0;
+    padding: .5em 1em .5em .5em;
+}
+
+.item-document .object {
+    font-weight: 700;
+}
+
+.item-document .param {
+    font-weight: 400;
+}
+
+.item-document .param .material-icons {
+    font-size: 16px;
+}
+
+.item-document .map {
+    border: 1px solid #C0C0C0;
+}
+
+#mapid {
+    height: 380px;
+}
+
+.item-document .reviews .item {
+    box-shadow: 0px 1px 0px 0px #C0C0C0;
+    margin: 1em 0;
+}
+
+.item-document .reviews .item .title {
+    font-weight: 700;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.item-document .reviews .item .description {
+    margin: 0 0 1em .5em;
+    padding: 0 0 0 .5em;
+    box-shadow: -1px 0px 0px 0px #C0C0C0;
+}
+
+.item-document .reviews .item .rate {
+    font-size: 16px;
+    padding: 0 0 1em 0;
+}
+
+.item-document .reviews .item .user {
+    padding: 0 0 1em 0;
+}
+
+.item-document .reviews .item .image img {
+    border-radius: 100%;
+    width: 54px;
+    height: 54px;
+}
+
+.item-document .reviews .item .user-info {
+    margin: 0 0 0 1em;
+    font-size: 12px;
+    font-style: italic;
+    height: 54px;
+}
+
+.item-document .reviews .input {
+    width: 85%;
+}
+
+
+
+.item-document .reviews .submit-rating {
+    width: 15%;
+    line-height: 54px;
+    margin: 1em 0 0 0;
+    border: 1px solid #C0C0C0;
+    border-left: none;
+}
+.item-document {
+	width: 100%;
+}
+
+
+.item-document .reviews .material-icons {
+    line-height: 54px;
+    cursor: pointer;
+}
+
+
+
+.item-document .reviews .write {
+    height: 111px;
+}
+
+.item-document .reviews form .button-parent {
+    height: 55px;
+}
+
+.item-document .reviews form .button {
+    margin: 1em 0;
+}
